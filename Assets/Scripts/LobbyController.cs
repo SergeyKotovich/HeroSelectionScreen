@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class LobbyController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private HeroSelectionScreen _heroSelectionScreen;
+    [SerializeField] private LobbyScreen _lobbyScreen;
+    [SerializeField] private HeroesManager _heroesManager;
+    [SerializeField] private HeroStatsView _heroStatsView;
+
+    private void Awake()
     {
-        
+        _heroSelectionScreen.Initialize(_heroesManager);
+    }
+    [UsedImplicitly]
+    public void ShowHeroSelectionScreen()
+    {
+        _heroSelectionScreen.ShowScreen();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ShowLobbyScreen()
     {
-        
+        _lobbyScreen.ShowScreen();
     }
 }

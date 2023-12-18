@@ -43,6 +43,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\HeroSettings.cs" />
      <Compile Include="Assets\Scripts\LobbyController.cs" />
+     <Compile Include="Assets\Scripts\LobbyScreen.cs" />
+     <Compile Include="Assets\Scripts\HeroStatsView.cs" />
+     <Compile Include="Assets\Scripts\HeroSelectionScreen.cs" />
      <Compile Include="Assets\Resources\Extensions\UIParticle\UIParticleSystem.cs" />
      <Compile Include="Assets\Scripts\HeroesManager.cs" />
      <None Include="Assets\Resources\Fonts\TextMesh Pro\Shaders\TMPro.cginc" />
