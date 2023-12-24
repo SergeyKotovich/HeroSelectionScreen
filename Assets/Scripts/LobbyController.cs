@@ -1,25 +1,32 @@
-using JetBrains.Annotations;
+using System;
 using UnityEngine;
 
 public class LobbyController : MonoBehaviour
 {
-    [SerializeField] private HeroSelectionScreen _heroSelectionScreen;
+    [SerializeField] private HeroesSettings heroesSettings;
+    [SerializeField] private Wallet _wallet;
+    [SerializeField] private HeroSelectScreen _heroSelectScreen;
     [SerializeField] private LobbyScreen _lobbyScreen;
-    [SerializeField] private HeroesManager _heroesManager;
-    [SerializeField] private HeroStatsView _heroStatsView;
+    private int _currentHeroIndex = 3;
 
     private void Awake()
     {
-        _heroSelectionScreen.Initialize(_heroesManager);
-    }
-    [UsedImplicitly]
-    public void ShowHeroSelectionScreen()
-    {
-        _heroSelectionScreen.ShowScreen();
+        ShowLobbyScreen();
     }
 
-    private void ShowLobbyScreen()
+    public void ShowSelectScreen()
     {
-        _lobbyScreen.ShowScreen();
+        _heroSelectScreen.Initialize(_currentHeroIndex,heroesSettings.Heroes,_wallet, OnHeroSelected );
     }
+
+    public void ShowLobbyScreen()
+    {
+        _lobbyScreen.Show(_currentHeroIndex,heroesSettings);
+    }
+
+    private void OnHeroSelected(int heroIndex)
+    {
+        _currentHeroIndex = heroIndex;
+    }
+    
 }

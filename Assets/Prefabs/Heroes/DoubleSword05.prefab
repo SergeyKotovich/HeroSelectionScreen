@@ -11747,7 +11747,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4898695792458526}
   - component: {fileID: 95209755138618062}
-  - component: {fileID: -497149367808056135}
   m_Layer: 3
   m_Name: DoubleSword05
   m_TagString: Untagged
@@ -11846,27 +11845,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-497149367808056135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938047842842718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e6d7be601e26374aa7f7e4a41c8b4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _health: 40
-  _attack: 40
-  _defense: 10
-  _speed: 30
-  <Name>k__BackingField: DoubleSword05
-  <Description>k__BackingField: Average speed and average attack, enough lives but
-    little protection
-  <Experience>k__BackingField: 55
-  <Icon>k__BackingField: {fileID: 21300000, guid: 455d317bd36c5444483f77940660f34b, type: 3}
 --- !u!1 &1940262280019192
 GameObject:
   m_ObjectHideFlags: 0

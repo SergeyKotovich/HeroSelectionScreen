@@ -1,30 +1,23 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HeroStatsView : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI _heroName;
     [SerializeField] private Slider _health;
     [SerializeField] private Slider _attack;
     [SerializeField] private Slider _defense;
     [SerializeField] private Slider _speed;
-    [SerializeField] private TextMeshProUGUI _name;
-    [SerializeField] private TextMeshProUGUI _description;
-    [SerializeField] private Slider _experience;
-    [SerializeField] private Image _icon;
+    [SerializeField] private TextMeshProUGUI _costHero;
     
-
-    public void Initialize(HeroSettings currentHero)
+    public void Show(HeroSettings currentHero)
     {
-        _health.value = currentHero.HEALTH;
-        _attack.value = currentHero.ATTACK;
-        _defense.value = currentHero.DEFENSE;
-        _speed.value = currentHero.SPEED;
-        _name.text = currentHero.Name;
-        _description.text = currentHero.Description;
-        _experience.value = currentHero.Experience;
-        _icon.sprite = currentHero.Icon;
+        _heroName.text = currentHero.Name;
+        _health.value = currentHero.Health;
+        _attack.value = currentHero.Attack;
+        _defense.value = currentHero.Defense;
+        _speed.value = currentHero.Speed;
+        _costHero.text = currentHero.Price.ToString();
     }
-    
 }

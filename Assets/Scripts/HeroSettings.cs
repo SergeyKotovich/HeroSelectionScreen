@@ -1,21 +1,21 @@
 using System;
 using UnityEngine;
-using UnityEngine.UI;
 
-
-
-public class HeroSettings : MonoBehaviour
+[Serializable]
+public class HeroSettings
 {
-    [SerializeField] private float _health;
-    [SerializeField] private float _attack;
-    [SerializeField] private float _defense;
-    [SerializeField] private float _speed;
     [field:SerializeField] public string Name { get; private set; }
-    [field:SerializeField] public string Description { get; private set; }
-    [field:SerializeField] public float Experience { get; private set; }
-    [field:SerializeField] public Sprite Icon { get; private set; }
-    public float HEALTH => _health;
-    public float ATTACK => _attack;
-    public float DEFENSE => _defense;
-    public float SPEED => _speed;
+    [field:SerializeField] public int Health { get; private set; }
+    [field:SerializeField] public int Attack { get; private set; }
+    [field:SerializeField] public int Defense { get; private set; }
+    [field:SerializeField] public int Speed { get; private set; }
+    [field:SerializeField] public float Price { get; private set; }
+    [field:SerializeField] public GameObject Prefab { get; private set; }
+    public bool IsAvailable;
+
+    public void MarkAsAvailable()
+    {
+        IsAvailable = true;
+    }
+
 }

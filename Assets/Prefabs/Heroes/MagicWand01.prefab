@@ -12171,7 +12171,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4736350825704954}
   - component: {fileID: 95048882397929844}
-  - component: {fileID: -4217932328398802682}
   m_Layer: 3
   m_Name: MagicWand01
   m_TagString: Untagged
@@ -12270,26 +12269,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-4217932328398802682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968433030019078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e6d7be601e26374aa7f7e4a41c8b4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _health: 20
-  _attack: 70
-  _defense: 10
-  _speed: 20
-  <Name>k__BackingField: MagicWand01
-  <Description>k__BackingField: Low speed and huge attack, few lives and little protection
-  <Experience>k__BackingField: 33
-  <Icon>k__BackingField: {fileID: 21300000, guid: 1f75d46fd305144cdb45d27034ef7382, type: 3}
 --- !u!1 &1973779820340038
 GameObject:
   m_ObjectHideFlags: 0
